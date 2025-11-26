@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Handwritten Digit Recognition</title>
+    <style>
+        body { text-align: center; background: #f2f2f2; font-family: Arial; }
+        canvas {
+            border: 3px solid black;
+            background: white;
+            margin-top: 20px;
+            touch-action: none;
+        }
+        button {
+            padding: 12px 20px;
+            margin: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Draw a Digit (0 - 9)</h1>
+
+<canvas id="canvas" width="300" height="300"></canvas>
+
+<br>
+<button onclick="predictDigit()">Predict</button>
+<button onclick="clearCanvas()">Clear</button>
+
+<h2 id="result">Prediction: </h2>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
